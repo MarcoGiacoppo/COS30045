@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Visualisation">
+    <meta name="description" content="HTML, CSS, D3">
+    <meta name="description" content="Marco Giacoppo">
+    <script src="//d3js.org/d3.v3.min.js"></script>
+
+	<title>Task 2.1 D3 Drawing With Data - Binding</title>
+    
+</head>
+<body>
+    
+    <h1>The D3 Journey starts here..</h1>
+
+    <script>
+
+        var dataset = [14, 5, 26, 23, 9];
+
+        d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .style('color', function(d) {
+                return d > 10 ? "red" : "black";
+            })
+            .text(function(d) { 
+                if (d > 10) {
+                    return "Warning: Joe watched " + d + " cat videos today."
+                } else {
+                    return "Joe watched " + d + " cat videos today."
+                }
+            });
+
+    </script>
+
+    <br>
+    <bf>
+
+
+	
+<div class="footer">
+	<br>
+	&#169; Swinburne University Of Technology
+	<br>
+	COS 30045 Data Visualisation
+	<br>
+	Semester 1 2023
+	<br>
+	Mark up by :<a href="104071453@student.swin.edu.au">Marco Giacoppo</a>
+</div>
+
+</body>
+</html>

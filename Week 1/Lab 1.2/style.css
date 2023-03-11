@@ -1,0 +1,42 @@
+.content {
+padding-right: 20%;
+margin: auto;
+padding-left: 20%;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+h1{
+    font-weight: 800;
+    font-size: 300%;
+}
+
+.graph{
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: green;
+  color: white;
+}
+
+#cap{
+  font-style: italic;
+}

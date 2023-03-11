@@ -1,0 +1,21 @@
+.content {
+padding-right: 20%;
+margin: auto;
+padding-left: 20%;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+h1{
+    font-weight: 800;
+    font-size: 300%;
+}
+

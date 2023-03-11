@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Visualisation Exercise 1.2">
+    <meta name="description" content="HTML, CSS, Javascript">
+    <meta name="description" content="Marco Giacoppo">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Task 1.2 Javascript</title>
+
+</head>
+<body>
+
+<div class="content">
+
+    <h1> Pets and the Pandemic </h1>
+    <h2>Marco Giacoppo</h2>
+
+    <p> A report from <em><strong>Medicines Australia (AMA)</strong></em> has found that many 
+    Australians took the opportunity to introduce a pet into their 
+    household during the pandemic.<br> Their survey indicated that there
+    was a significant increase in the percent of households taking in a 
+    new <i> dog, fish or bird.</i>
+   
+    <br> Their research also indicated that pets had a
+    number of positive influences on their lives such as:</p>
+
+    <ul>
+    <li>Companionship</li> 
+    <li>Better mental health</li> 
+    <li>Joy and happiness</li> 
+    </ul>
+
+<hr>
+<div class="graph">
+<figure>
+    <img src="/images/table.png" width="700px"></a>
+    <figcaption>
+        <p><i> Fig 1. Comparison of Pet Ownership in 2019 and 2021. Data Source: 
+        <a href="https://animalmedicinesaustralia.org.au/wp-content/uploads/2021/08/AMAU005-PATP-Report21_v1.41_WEB.pdf">Animal Medicines Australia Report</a> </i></p>
+    </figcaption>
+</figure>
+</div>
+<hr>
+<hr>
+<!-- <div class="graph"> -->
+    <h3>Based on the table above, here are 3 different charts that could help you understand it better</h3>
+
+    <img id="image" src="/images/y2019.png" alt="Pet Owndership in Australia, 2019 vs 2021">
+    
+    <p id="cap"><i>Total Owner Households from 2019-2021</i></p>
+
+    <button type="button" onclick="show(this)" value="btn2019">2019</button>
+    <button type="button" onclick="show(this)" value="btn2021">2021</button>
+    <button type="button" onclick="show(this)" value="btnboth">Both</button>
+    <br><br>
+	
+<!-- </div> -->
+
+<p>With the increase in pet ownership the AMA are encouraging policy makers to consider the needs of companion animals and their owners when considering rental, strata and body corporate regulations are well as accepting animals in 
+    public places and transport.</p>
+
+<div class="footer">
+    <br>
+    &#169; Swinburne University Of Technology
+    <br>
+    COS 30045 Data Visualisation
+    <br>
+    Semester 1 2023
+    <br>
+    Mark up by :<a href="104071453@student.swin.edu.au">Marco Giacoppo</a>
+    
+    
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
