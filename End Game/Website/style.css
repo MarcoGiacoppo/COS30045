@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro{
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h1{
+    font-size: 50px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.side-bar h3{
+    writing-mode: vertical-rl;
+    color: #fbfcfd;
+    margin: 15px;
+    font-style: italic;
+}
+
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+.social-links img, .usefull-links img{
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.usefull-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 15px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 5s;
+    width: 25px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 8s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 2s;
+    width: 35px;
+}
+
+/*Intro paragraph*/
+.text{
+    font-size: 20px;
+    color: #00545d;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    animation: typing 5s,
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+
+@keyframes typing{
+    from {width: 0}
+}
+
+.mapcontainer{
+    width: 100%;    
+    margin: 0 auto;
+}
+
+.mapcontainer svg {
+    scale: 1;
+}
+
+/*Number counter*/
+
+.migration-data{
+    background: rgb(3, 51, 75);
+    text-align: center;
+    transition: all 0.7s linear;
+    color: whitesmoke;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2rem;
+    display: grid;
+    position: relative;
+}
+
+.counter .count{
+   font-size: 2.5rem;
+   margin-bottom: 0rem;
+}
+/* End number counter */
+
+/* Sentence between button */
+#texter{
+    color: #00545d;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container{
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+/* Return Button */
+#returnButton{
+    width: 200px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(3, 51, 75);
+    font-weight: 400;
+    border: 2px solid rgb(3, 51, 75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+#returnButton:hover{
+    box-shadow: 0 5px 50px 0 rgb(3, 51, 75), 0 5px 50px 0 rgb(3, 51, 75);
+}
+/* More Graphs Button */
+#otherButton{
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(3, 51, 75);
+    font-weight: 400;
+    border: 2px solid rgb(3, 51, 75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+#otherButton:hover{
+    box-shadow: 0 5px 50px 0 rgb(3, 51, 75), 0 5px 50px 0 rgb(3, 51, 75);
+}
+/* Home page button */
+#homeButton{
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(3, 51, 75);
+    font-weight: 400;
+    border: 2px solid rgb(3, 51, 75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+#homeButton:hover{
+    box-shadow: 0 5px 50px 0 rgb(3, 51, 75), 0 5px 50px 0 rgb(3, 51, 75);
+}
+/* End of button */
+
+/* Footer in home*/
+p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: white;
+}
+.footer-bottom{
+    background: rgb(2, 36, 53);
+    padding: 10px;
+    text-align: center; 
+}
+.footer-bottom p{
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+    color: aqua;
+    font-size: 16px;
+    text-decoration: none;
+}
+/* End of footer */
+
+/* Graphs page */
+#graphFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+}
+.lineChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container p{
+    color:black;
+}
+button{
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    font-size: 10px;
+    color: rgb(3, 51, 75);
+    font-weight: 500;
+    border: 3px solid black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+button:hover{
+    box-shadow: 0 5px 50px 0 rgb(3, 51, 75), 0 5px 50px 0 rgb(3, 51, 75);
+}
+.mapButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pulse{
+    background-color: grey;
+    color: white;
+}
+.pulsing{
+    animation: pulsing 1s infinite ease-out;
+}
+@keyframes pulsing{
+    0%{
+        box-shadow: 0 0 0 0 rgb(255, 0, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 2px rgb(255, 0, 0);
+    }
+}
+/* End of graph page */
+
+/* More page */
+.barChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  

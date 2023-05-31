@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="//d3js.org/d3.v7.min.js"></script>
+    <script src="script/index.js"></script>
+
+    <title>Data Visualization Project</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <!-- Landing page -->
+        <div class="intro">
+            <small>Welcome To Our Webpage</small>
+            <h1>On the Move: Understanding Human Migration Through Visualization</h1>
+        </div>
+        <!-- Vertical Sidebar -->
+        <div class="side-bar">
+            <h3>Created by: Marco Giacoppo & Xavier O'Leary</h3>
+
+            <div class="usefull-links">
+                <img src="images/fb.png">
+                <img src="images/ig.png">
+                <img src="images/tw.png">
+                <img src="images/share.png">
+                <img src="images/info.png">
+            </div>
+        </div>
+        <!-- Bubbles Floating -->
+        <div class="bubbles">
+            <img id="bubble" onclick="popBubble('bubble')" src="images/bubble.png">
+            <img id="bubble2" onclick="popBubble('bubble2')" src="images/bubble.png">
+            <img id="bubble3" onclick="popBubble('bubble3')" src="images/bubble.png">
+            <img id="bubble4" onclick="popBubble('bubble4')" src="images/bubble.png">
+            <img id="bubble5" onclick="popBubble('bubble5')" src="images/bubble.png">
+            <img id="bubble6" onclick="popBubble('bubble6')" src="images/bubble.png">
+            <img id="bubble7" onclick="popBubble('bubble7')" src="images/bubble.png">
+        </div>     
+     </div>
+
+    <br> <br>
+    <!-- Typing sentence -->
+    <div class="content">
+        <p class="text">"Human migration has been a constant throughout history, shaping cultures and economies around the world. </p>
+        <p class="text">Our website provides an interactive visualization of migration patterns to help you understand the complexities of this phenomenon."</p>
+    </div>
+
+    <br><br><br>
+    <!-- Counter -->
+    <div class="migration-data">
+        <div class="counter">
+            <h1 class="count" data-target="981492">0</h1>
+            <p>England Migrants in Australia</p>
+        </div>
+        <div class="counter">
+            <h1 class="count" data-target="721836">0</h1>
+            <p>India Migrants in Australia</p>
+        </div>
+        <div class="counter">
+            <h1 class="count" data-target="650151">0</h1>
+            <p>Chinese Migrants in Australia</p>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class = "container"> <br>
+        <button id = "returnButton" type = "button">Go Back</button>
+        <p id="texter">Check out where the migrants are coming from by clicking on a state!</p>    
+        <button id="otherButton" type="button" onclick="window.location.href='graphs.html'">Other graphs</button>
+    </div>
+
+    <!-- Map -->
+    <div class="mapcontainer">
+        <p id="chart2"></p>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>Designed by - <a href=""> Marco Giacoppo & Xavier O'Leary</a></p>
+        </div>
+    </footer>
+
+    <script src="script/style.js"></script>
+
+</body>
+</html>

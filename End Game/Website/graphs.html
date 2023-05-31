@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script/graphs.js"></script>
+
+
+    <title>Data Visualization Project</title>
+
+</head>
+<body>
+    <!-- Button -->
+    <div class="container">
+        <button id="homeButton" type="button" onclick="window.location.href='index.html'">Back to Home</button>
+        <p id="texter"><b>Inbound</b> Migration Patterns across Australian States: 2016 to 2022</p>
+        <button id="homeButton" type="button" onclick="window.location.href='more.html'">Next Page</button>
+
+    </div>
+     <!-- Buttons to show different states -->
+         <div class="mapButton">
+            <button class="pulse" id="btnNSW">New South Wales</button>
+            <button class="pulse" id="btnVIC">Victoria</button>
+            <button class="pulse" id="btnQLD">Queensland</button>
+            <button class="pulse" id="btnSA">South Australia</button>
+            <button class="pulse" id="btnWA">Western Australia</button>
+            <button class="pulse" id="btnTAS">Tasmania</button>
+            <button class="pulse" id="btnNT">Northern Territory</button>
+            <button class="pulse" id="btnACT">Australian Capital Territory</button>
+        </div>
+        
+    <!-- Graph -->
+    <div class = "lineChart"></div>
+
+    <!-- Footer -->
+    <footer id="graphFooter">
+        <div class="footer-bottom">
+            <p>Designed by - <a href=""> Marco Giacoppo & Xavier O'Leary</a></p>
+        </div>
+    </footer>
+
+    <script src="script/style.js"></script>
+</body>
+</html>
